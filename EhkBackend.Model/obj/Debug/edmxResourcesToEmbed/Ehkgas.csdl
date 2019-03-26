@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFeesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="acemail">
+    <Key>
+      <PropertyRef Name="account" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="delflag" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="admin_id" />
+    </Key>
+    <Property Name="admin_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="admin_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admin_pwd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admin_realName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admin_phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="admin_back1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="admin_back2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="admin_back3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="BILLNO" />
+    </Key>
+    <Property Name="Account" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SUBSCRIBER" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CORRADDR1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BILLNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BILLDATE" Type="DateTime" Precision="3" />
+    <Property Name="PREVREAD" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="READs" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CHARGE" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BFAMT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ADDAMT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ODDCENT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="READTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BILLAMT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PAYAMT" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="M_BILLS">
+    <Key>
+      <PropertyRef Name="BILLNO" />
+    </Key>
+    <Property Name="ACCOUNT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BILLNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PREV" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PRES" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UNIT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RATE" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BF" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ODD" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CHG" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MISC" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BILL" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="AUTO" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DESC1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS2" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS3" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="DateTime" Precision="3" />
+    <Property Name="DUDATE" Type="DateTime" Precision="3" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="m_bills1">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="billno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prev" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pres" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="unit" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="type" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="bf" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="odd" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="chg" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="misc" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="bill" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="auto" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="descs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="m_bills2">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="billno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prev" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pres" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="unit" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="bf" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="odd" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="chg" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="misc" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="bill" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="auto" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="descs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="m_bills3">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="billno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="prev" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pres" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="unit" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="bf" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="odd" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="chg" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="misc" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="bill" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="auto" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="descs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="M_Detail">
+    <Key>
+      <PropertyRef Name="ACCOUNT" />
+      <PropertyRef Name="BILLNO" />
+    </Key>
+    <Property Name="ACCOUNT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BILLNO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ACTCODE1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT1" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT2" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT3" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE4" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE5" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT5" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE6" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT6" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE7" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT7" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE8" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT8" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE9" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CHARGEAMT9" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="m_detail1">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="billno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="actcode1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt1" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt2" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt3" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt5" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt6" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt7" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt8" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt9" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="m_detail2">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="billno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="actcode1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt1" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt2" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt3" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt5" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="actcode6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt6" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt7" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt8" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt9" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="m_detail3">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="billno" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="actcode1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt1" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt2" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt3" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt4" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt5" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt6" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt7" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt8" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="actcode9" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="chargeamt9" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="month1">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bildate" Type="DateTime" Precision="3" />
+    <Property Name="Duedate" Type="DateTime" Precision="3" />
+    <Property Name="Rate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="month2">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bildate" Type="DateTime" Precision="3" />
+    <Property Name="Duedate" Type="DateTime" Precision="3" />
+    <Property Name="Rate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="month3">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="billdate" Type="DateTime" Precision="3" />
+    <Property Name="Duedate" Type="DateTime" Precision="3" />
+    <Property Name="Rate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MR">
+    <Key>
+      <PropertyRef Name="ACCOUNT" />
+    </Key>
+    <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MAINTDT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="users_id" />
+    </Key>
+    <Property Name="users_id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="users_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="users_bu1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="users_bu2" Type="Int32" />
+    <Property Name="users_bu3" Type="Boolean" />
+    <Property Name="delflag" Type="Boolean" />
+    <Property Name="users_pwd" Type="String" MaxLength="4" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="users_email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="address_id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserAddress">
+    <Key>
+      <PropertyRef Name="address_id" />
+    </Key>
+    <Property Name="address_id" Type="Int32" Nullable="false" />
+    <Property Name="address_full" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address_content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="address_area" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="delflag" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USERID">
+    <Key>
+      <PropertyRef Name="ACCOUNT" />
+    </Key>
+    <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDPASSNO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="EFeesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="acemail" EntityType="Self.acemail" />
+    <EntitySet Name="Admins" EntityType="Self.Admins" />
+    <EntitySet Name="Bill" EntityType="Self.Bill" />
+    <EntitySet Name="M_BILLS" EntityType="Self.M_BILLS" />
+    <EntitySet Name="m_bills1" EntityType="Self.m_bills1" />
+    <EntitySet Name="m_bills2" EntityType="Self.m_bills2" />
+    <EntitySet Name="m_bills3" EntityType="Self.m_bills3" />
+    <EntitySet Name="M_Detail" EntityType="Self.M_Detail" />
+    <EntitySet Name="m_detail1" EntityType="Self.m_detail1" />
+    <EntitySet Name="m_detail2" EntityType="Self.m_detail2" />
+    <EntitySet Name="m_detail3" EntityType="Self.m_detail3" />
+    <EntitySet Name="month1" EntityType="Self.month1" />
+    <EntitySet Name="month2" EntityType="Self.month2" />
+    <EntitySet Name="month3" EntityType="Self.month3" />
+    <EntitySet Name="MR" EntityType="Self.MR" />
+    <EntitySet Name="UserAccount" EntityType="Self.UserAccount" />
+    <EntitySet Name="UserAddress" EntityType="Self.UserAddress" />
+    <EntitySet Name="USERID" EntityType="Self.USERID" />
+  </EntityContainer>
+</Schema>

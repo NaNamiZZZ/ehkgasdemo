@@ -1,0 +1,10 @@
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EhkBackend.Model.dll.config
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EhkBackend.Model.dll
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EhkBackend.Model.pdb
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EntityFramework.dll
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EntityFramework.xml
+E:\myproject\EhkBackend\EhkBackend.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\myproject\EhkBackend\EhkBackend.Model\obj\Debug\EhkBackend.Model.csprojResolveAssemblyReference.cache
+E:\myproject\EhkBackend\EhkBackend.Model\obj\Debug\EhkBackend.Model.dll
+E:\myproject\EhkBackend\EhkBackend.Model\obj\Debug\EhkBackend.Model.pdb

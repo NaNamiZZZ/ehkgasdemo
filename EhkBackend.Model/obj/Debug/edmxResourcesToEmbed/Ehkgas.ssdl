@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFeesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acemail">
+    <Key>
+      <PropertyRef Name="account" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="delflag" Type="bit" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="admin_id" />
+    </Key>
+    <Property Name="admin_id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="admin_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="admin_pwd" Type="nvarchar" MaxLength="100" />
+    <Property Name="admin_realName" Type="nvarchar" MaxLength="100" />
+    <Property Name="admin_phone" Type="nvarchar" MaxLength="12" />
+    <Property Name="admin_back1" Type="nvarchar" MaxLength="50" />
+    <Property Name="admin_back2" Type="nvarchar" MaxLength="50" />
+    <Property Name="admin_back3" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Bill">
+    <Key>
+      <PropertyRef Name="BILLNO" />
+    </Key>
+    <Property Name="Account" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUBSCRIBER" Type="nvarchar(max)" />
+    <Property Name="CORRADDR1" Type="nvarchar(max)" />
+    <Property Name="BILLNO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BILLDATE" Type="datetime" />
+    <Property Name="PREVREAD" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="READs" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CHARGE" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BFAMT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ADDAMT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ODDCENT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="READTYPE" Type="nvarchar" MaxLength="50" />
+    <Property Name="BILLAMT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PAYAMT" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="M_BILLS">
+    <Key>
+      <PropertyRef Name="BILLNO" />
+    </Key>
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BILLNO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PREV" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PRES" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="UNIT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RATE" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TYPE" Type="nvarchar" MaxLength="50" />
+    <Property Name="BF" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ODD" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CHG" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="MISC" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BILL" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AUTO" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DESC1" Type="nvarchar(max)" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="ADDRESS1" Type="nvarchar" MaxLength="200" />
+    <Property Name="ADDRESS2" Type="nvarchar" MaxLength="200" />
+    <Property Name="ADDRESS3" Type="nvarchar" MaxLength="200" />
+    <Property Name="DATE" Type="datetime" />
+    <Property Name="DUDATE" Type="datetime" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="m_bills1">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="billno" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="prev" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="pres" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="unit" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="type" Type="nvarchar" MaxLength="200" />
+    <Property Name="bf" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="odd" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="chg" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="misc" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="bill" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="auto" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="descs" Type="nvarchar(max)" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="address1" Type="nvarchar(max)" />
+    <Property Name="address2" Type="nvarchar(max)" />
+    <Property Name="address3" Type="nvarchar(max)" />
+    <Property Name="date" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="m_bills2">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="billno" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="prev" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="pres" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="unit" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="type" Type="nvarchar(max)" />
+    <Property Name="bf" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="odd" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="chg" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="misc" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="bill" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="auto" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="descs" Type="nvarchar(max)" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="address1" Type="nvarchar(max)" />
+    <Property Name="address2" Type="nvarchar(max)" />
+    <Property Name="address3" Type="nvarchar(max)" />
+    <Property Name="date" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="m_bills3">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="billno" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="prev" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="pres" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="unit" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="type" Type="nvarchar(max)" />
+    <Property Name="bf" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="odd" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="chg" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="misc" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="bill" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="auto" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="descs" Type="nvarchar(max)" />
+    <Property Name="name" Type="nvarchar(max)" />
+    <Property Name="address1" Type="nvarchar(max)" />
+    <Property Name="address2" Type="nvarchar(max)" />
+    <Property Name="address3" Type="nvarchar(max)" />
+    <Property Name="date" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="M_Detail">
+    <Key>
+      <PropertyRef Name="ACCOUNT" />
+      <PropertyRef Name="BILLNO" />
+    </Key>
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BILLNO" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ACTCODE1" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT1" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE2" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT2" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE3" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT3" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE4" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE5" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT5" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE6" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT6" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE7" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT7" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE8" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT8" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ACTCODE9" Type="nvarchar" MaxLength="10" />
+    <Property Name="CHARGEAMT9" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="m_detail1">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" />
+    <Property Name="billno" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="actcode1" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt1" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt2" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode3" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt3" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode4" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode5" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt5" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode6" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt6" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode7" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt7" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode8" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt8" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode9" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt9" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="m_detail2">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" />
+    <Property Name="billno" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="actcode1" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt1" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt2" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode3" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt3" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode4" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode5" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt5" Type="decimal" Precision="18" Scale="5" />
+    <Property Name="actcode6" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt6" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode7" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt7" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode8" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt8" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode9" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt9" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="m_detail3">
+    <Key>
+      <PropertyRef Name="billno" />
+    </Key>
+    <Property Name="account" Type="nvarchar" MaxLength="100" />
+    <Property Name="billno" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="actcode1" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt1" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode2" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt2" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode3" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt3" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode4" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt4" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode5" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt5" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode6" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt6" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode7" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt7" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode8" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt8" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="actcode9" Type="nvarchar" MaxLength="50" />
+    <Property Name="chargeamt9" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="month1">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bildate" Type="datetime" />
+    <Property Name="Duedate" Type="datetime" />
+    <Property Name="Rate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remarks1" Type="nvarchar(max)" />
+    <Property Name="Remarks2" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="month2">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bildate" Type="datetime" />
+    <Property Name="Duedate" Type="datetime" />
+    <Property Name="Rate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remarks1" Type="nvarchar(max)" />
+    <Property Name="Remarks2" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="month3">
+    <Key>
+      <PropertyRef Name="mid" />
+    </Key>
+    <Property Name="mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="billdate" Type="datetime" />
+    <Property Name="Duedate" Type="datetime" />
+    <Property Name="Rate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remarks1" Type="nvarchar(max)" />
+    <Property Name="Remarks2" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="MR">
+    <Key>
+      <PropertyRef Name="ACCOUNT" />
+    </Key>
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MAINTDT" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="UserAccount">
+    <Key>
+      <PropertyRef Name="users_id" />
+    </Key>
+    <Property Name="users_id" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="users_name" Type="nvarchar" MaxLength="100" />
+    <Property Name="users_bu1" Type="nvarchar" MaxLength="100" />
+    <Property Name="users_bu2" Type="int" />
+    <Property Name="users_bu3" Type="bit" />
+    <Property Name="delflag" Type="bit" />
+    <Property Name="users_pwd" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="users_email" Type="nvarchar" MaxLength="100" />
+    <Property Name="address_id" Type="int" />
+  </EntityType>
+  <EntityType Name="UserAddress">
+    <Key>
+      <PropertyRef Name="address_id" />
+    </Key>
+    <Property Name="address_id" Type="int" Nullable="false" />
+    <Property Name="address_full" Type="nvarchar(max)" />
+    <Property Name="address_content" Type="nvarchar(max)" />
+    <Property Name="address_area" Type="nvarchar" MaxLength="50" />
+    <Property Name="delflag" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USERID">
+    <Key>
+      <PropertyRef Name="ACCOUNT" />
+    </Key>
+    <Property Name="ACCOUNT" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IDPASSNO" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="EFeesModelStoreContainer">
+    <EntitySet Name="acemail" EntityType="Self.acemail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="M_BILLS" EntityType="Self.M_BILLS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_bills1" EntityType="Self.m_bills1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_bills2" EntityType="Self.m_bills2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_bills3" EntityType="Self.m_bills3" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="M_Detail" EntityType="Self.M_Detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_detail1" EntityType="Self.m_detail1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_detail2" EntityType="Self.m_detail2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_detail3" EntityType="Self.m_detail3" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="month1" EntityType="Self.month1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="month2" EntityType="Self.month2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="month3" EntityType="Self.month3" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MR" EntityType="Self.MR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAccount" EntityType="Self.UserAccount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAddress" EntityType="Self.UserAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USERID" EntityType="Self.USERID" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

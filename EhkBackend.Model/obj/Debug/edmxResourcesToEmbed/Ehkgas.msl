@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFeesModelStoreContainer" CdmEntityContainer="EFeesEntities">
+    <EntitySetMapping Name="acemail">
+      <EntityTypeMapping TypeName="EFeesModel.acemail">
+        <MappingFragment StoreEntitySet="acemail">
+          <ScalarProperty Name="delflag" ColumnName="delflag" />
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="EFeesModel.Admins">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="admin_name" ColumnName="admin_name" />
+          <ScalarProperty Name="admin_pwd" ColumnName="admin_pwd" />
+          <ScalarProperty Name="admin_realName" ColumnName="admin_realName" />
+          <ScalarProperty Name="admin_phone" ColumnName="admin_phone" />
+          <ScalarProperty Name="admin_back1" ColumnName="admin_back1" />
+          <ScalarProperty Name="admin_back2" ColumnName="admin_back2" />
+          <ScalarProperty Name="admin_back3" ColumnName="admin_back3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bill">
+      <EntityTypeMapping TypeName="EFeesModel.Bill">
+        <MappingFragment StoreEntitySet="Bill">
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="SUBSCRIBER" ColumnName="SUBSCRIBER" />
+          <ScalarProperty Name="CORRADDR1" ColumnName="CORRADDR1" />
+          <ScalarProperty Name="BILLNO" ColumnName="BILLNO" />
+          <ScalarProperty Name="BILLDATE" ColumnName="BILLDATE" />
+          <ScalarProperty Name="PREVREAD" ColumnName="PREVREAD" />
+          <ScalarProperty Name="READs" ColumnName="READs" />
+          <ScalarProperty Name="CHARGE" ColumnName="CHARGE" />
+          <ScalarProperty Name="BFAMT" ColumnName="BFAMT" />
+          <ScalarProperty Name="ADDAMT" ColumnName="ADDAMT" />
+          <ScalarProperty Name="ODDCENT" ColumnName="ODDCENT" />
+          <ScalarProperty Name="READTYPE" ColumnName="READTYPE" />
+          <ScalarProperty Name="BILLAMT" ColumnName="BILLAMT" />
+          <ScalarProperty Name="PAYAMT" ColumnName="PAYAMT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="M_BILLS">
+      <EntityTypeMapping TypeName="EFeesModel.M_BILLS">
+        <MappingFragment StoreEntitySet="M_BILLS">
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="BILLNO" ColumnName="BILLNO" />
+          <ScalarProperty Name="PREV" ColumnName="PREV" />
+          <ScalarProperty Name="PRES" ColumnName="PRES" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="BF" ColumnName="BF" />
+          <ScalarProperty Name="ODD" ColumnName="ODD" />
+          <ScalarProperty Name="CHG" ColumnName="CHG" />
+          <ScalarProperty Name="MISC" ColumnName="MISC" />
+          <ScalarProperty Name="BILL" ColumnName="BILL" />
+          <ScalarProperty Name="AUTO" ColumnName="AUTO" />
+          <ScalarProperty Name="DESC1" ColumnName="DESC1" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="DUDATE" ColumnName="DUDATE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_bills1">
+      <EntityTypeMapping TypeName="EFeesModel.m_bills1">
+        <MappingFragment StoreEntitySet="m_bills1">
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="billno" ColumnName="billno" />
+          <ScalarProperty Name="prev" ColumnName="prev" />
+          <ScalarProperty Name="pres" ColumnName="pres" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="bf" ColumnName="bf" />
+          <ScalarProperty Name="odd" ColumnName="odd" />
+          <ScalarProperty Name="chg" ColumnName="chg" />
+          <ScalarProperty Name="misc" ColumnName="misc" />
+          <ScalarProperty Name="bill" ColumnName="bill" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="descs" ColumnName="descs" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address3" ColumnName="address3" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_bills2">
+      <EntityTypeMapping TypeName="EFeesModel.m_bills2">
+        <MappingFragment StoreEntitySet="m_bills2">
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="billno" ColumnName="billno" />
+          <ScalarProperty Name="prev" ColumnName="prev" />
+          <ScalarProperty Name="pres" ColumnName="pres" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="bf" ColumnName="bf" />
+          <ScalarProperty Name="odd" ColumnName="odd" />
+          <ScalarProperty Name="chg" ColumnName="chg" />
+          <ScalarProperty Name="misc" ColumnName="misc" />
+          <ScalarProperty Name="bill" ColumnName="bill" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="descs" ColumnName="descs" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address3" ColumnName="address3" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_bills3">
+      <EntityTypeMapping TypeName="EFeesModel.m_bills3">
+        <MappingFragment StoreEntitySet="m_bills3">
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="billno" ColumnName="billno" />
+          <ScalarProperty Name="prev" ColumnName="prev" />
+          <ScalarProperty Name="pres" ColumnName="pres" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="bf" ColumnName="bf" />
+          <ScalarProperty Name="odd" ColumnName="odd" />
+          <ScalarProperty Name="chg" ColumnName="chg" />
+          <ScalarProperty Name="misc" ColumnName="misc" />
+          <ScalarProperty Name="bill" ColumnName="bill" />
+          <ScalarProperty Name="auto" ColumnName="auto" />
+          <ScalarProperty Name="descs" ColumnName="descs" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address3" ColumnName="address3" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="M_Detail">
+      <EntityTypeMapping TypeName="EFeesModel.M_Detail">
+        <MappingFragment StoreEntitySet="M_Detail">
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="BILLNO" ColumnName="BILLNO" />
+          <ScalarProperty Name="ACTCODE1" ColumnName="ACTCODE1" />
+          <ScalarProperty Name="CHARGEAMT1" ColumnName="CHARGEAMT1" />
+          <ScalarProperty Name="ACTCODE2" ColumnName="ACTCODE2" />
+          <ScalarProperty Name="CHARGEAMT2" ColumnName="CHARGEAMT2" />
+          <ScalarProperty Name="ACTCODE3" ColumnName="ACTCODE3" />
+          <ScalarProperty Name="CHARGEAMT3" ColumnName="CHARGEAMT3" />
+          <ScalarProperty Name="ACTCODE4" ColumnName="ACTCODE4" />
+          <ScalarProperty Name="CHARGEAMT4" ColumnName="CHARGEAMT4" />
+          <ScalarProperty Name="ACTCODE5" ColumnName="ACTCODE5" />
+          <ScalarProperty Name="CHARGEAMT5" ColumnName="CHARGEAMT5" />
+          <ScalarProperty Name="ACTCODE6" ColumnName="ACTCODE6" />
+          <ScalarProperty Name="CHARGEAMT6" ColumnName="CHARGEAMT6" />
+          <ScalarProperty Name="ACTCODE7" ColumnName="ACTCODE7" />
+          <ScalarProperty Name="CHARGEAMT7" ColumnName="CHARGEAMT7" />
+          <ScalarProperty Name="ACTCODE8" ColumnName="ACTCODE8" />
+          <ScalarProperty Name="CHARGEAMT8" ColumnName="CHARGEAMT8" />
+          <ScalarProperty Name="ACTCODE9" ColumnName="ACTCODE9" />
+          <ScalarProperty Name="CHARGEAMT9" ColumnName="CHARGEAMT9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_detail1">
+      <EntityTypeMapping TypeName="EFeesModel.m_detail1">
+        <MappingFragment StoreEntitySet="m_detail1">
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="billno" ColumnName="billno" />
+          <ScalarProperty Name="actcode1" ColumnName="actcode1" />
+          <ScalarProperty Name="chargeamt1" ColumnName="chargeamt1" />
+          <ScalarProperty Name="actcode2" ColumnName="actcode2" />
+          <ScalarProperty Name="chargeamt2" ColumnName="chargeamt2" />
+          <ScalarProperty Name="actcode3" ColumnName="actcode3" />
+          <ScalarProperty Name="chargeamt3" ColumnName="chargeamt3" />
+          <ScalarProperty Name="actcode4" ColumnName="actcode4" />
+          <ScalarProperty Name="chargeamt4" ColumnName="chargeamt4" />
+          <ScalarProperty Name="actcode5" ColumnName="actcode5" />
+          <ScalarProperty Name="chargeamt5" ColumnName="chargeamt5" />
+          <ScalarProperty Name="actcode6" ColumnName="actcode6" />
+          <ScalarProperty Name="chargeamt6" ColumnName="chargeamt6" />
+          <ScalarProperty Name="actcode7" ColumnName="actcode7" />
+          <ScalarProperty Name="chargeamt7" ColumnName="chargeamt7" />
+          <ScalarProperty Name="actcode8" ColumnName="actcode8" />
+          <ScalarProperty Name="chargeamt8" ColumnName="chargeamt8" />
+          <ScalarProperty Name="actcode9" ColumnName="actcode9" />
+          <ScalarProperty Name="chargeamt9" ColumnName="chargeamt9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_detail2">
+      <EntityTypeMapping TypeName="EFeesModel.m_detail2">
+        <MappingFragment StoreEntitySet="m_detail2">
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="billno" ColumnName="billno" />
+          <ScalarProperty Name="actcode1" ColumnName="actcode1" />
+          <ScalarProperty Name="chargeamt1" ColumnName="chargeamt1" />
+          <ScalarProperty Name="actcode2" ColumnName="actcode2" />
+          <ScalarProperty Name="chargeamt2" ColumnName="chargeamt2" />
+          <ScalarProperty Name="actcode3" ColumnName="actcode3" />
+          <ScalarProperty Name="chargeamt3" ColumnName="chargeamt3" />
+          <ScalarProperty Name="actcode4" ColumnName="actcode4" />
+          <ScalarProperty Name="chargeamt4" ColumnName="chargeamt4" />
+          <ScalarProperty Name="actcode5" ColumnName="actcode5" />
+          <ScalarProperty Name="chargeamt5" ColumnName="chargeamt5" />
+          <ScalarProperty Name="actcode6" ColumnName="actcode6" />
+          <ScalarProperty Name="chargeamt6" ColumnName="chargeamt6" />
+          <ScalarProperty Name="actcode7" ColumnName="actcode7" />
+          <ScalarProperty Name="chargeamt7" ColumnName="chargeamt7" />
+          <ScalarProperty Name="actcode8" ColumnName="actcode8" />
+          <ScalarProperty Name="chargeamt8" ColumnName="chargeamt8" />
+          <ScalarProperty Name="actcode9" ColumnName="actcode9" />
+          <ScalarProperty Name="chargeamt9" ColumnName="chargeamt9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_detail3">
+      <EntityTypeMapping TypeName="EFeesModel.m_detail3">
+        <MappingFragment StoreEntitySet="m_detail3">
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="billno" ColumnName="billno" />
+          <ScalarProperty Name="actcode1" ColumnName="actcode1" />
+          <ScalarProperty Name="chargeamt1" ColumnName="chargeamt1" />
+          <ScalarProperty Name="actcode2" ColumnName="actcode2" />
+          <ScalarProperty Name="chargeamt2" ColumnName="chargeamt2" />
+          <ScalarProperty Name="actcode3" ColumnName="actcode3" />
+          <ScalarProperty Name="chargeamt3" ColumnName="chargeamt3" />
+          <ScalarProperty Name="actcode4" ColumnName="actcode4" />
+          <ScalarProperty Name="chargeamt4" ColumnName="chargeamt4" />
+          <ScalarProperty Name="actcode5" ColumnName="actcode5" />
+          <ScalarProperty Name="chargeamt5" ColumnName="chargeamt5" />
+          <ScalarProperty Name="actcode6" ColumnName="actcode6" />
+          <ScalarProperty Name="chargeamt6" ColumnName="chargeamt6" />
+          <ScalarProperty Name="actcode7" ColumnName="actcode7" />
+          <ScalarProperty Name="chargeamt7" ColumnName="chargeamt7" />
+          <ScalarProperty Name="actcode8" ColumnName="actcode8" />
+          <ScalarProperty Name="chargeamt8" ColumnName="chargeamt8" />
+          <ScalarProperty Name="actcode9" ColumnName="actcode9" />
+          <ScalarProperty Name="chargeamt9" ColumnName="chargeamt9" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="month1">
+      <EntityTypeMapping TypeName="EFeesModel.month1">
+        <MappingFragment StoreEntitySet="month1">
+          <ScalarProperty Name="mid" ColumnName="mid" />
+          <ScalarProperty Name="bildate" ColumnName="bildate" />
+          <ScalarProperty Name="Duedate" ColumnName="Duedate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Remarks1" ColumnName="Remarks1" />
+          <ScalarProperty Name="Remarks2" ColumnName="Remarks2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="month2">
+      <EntityTypeMapping TypeName="EFeesModel.month2">
+        <MappingFragment StoreEntitySet="month2">
+          <ScalarProperty Name="mid" ColumnName="mid" />
+          <ScalarProperty Name="bildate" ColumnName="bildate" />
+          <ScalarProperty Name="Duedate" ColumnName="Duedate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Remarks1" ColumnName="Remarks1" />
+          <ScalarProperty Name="Remarks2" ColumnName="Remarks2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="month3">
+      <EntityTypeMapping TypeName="EFeesModel.month3">
+        <MappingFragment StoreEntitySet="month3">
+          <ScalarProperty Name="mid" ColumnName="mid" />
+          <ScalarProperty Name="billdate" ColumnName="billdate" />
+          <ScalarProperty Name="Duedate" ColumnName="Duedate" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Remarks1" ColumnName="Remarks1" />
+          <ScalarProperty Name="Remarks2" ColumnName="Remarks2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MR">
+      <EntityTypeMapping TypeName="EFeesModel.MR">
+        <MappingFragment StoreEntitySet="MR">
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="MAINTDT" ColumnName="MAINTDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAccount">
+      <EntityTypeMapping TypeName="EFeesModel.UserAccount">
+        <MappingFragment StoreEntitySet="UserAccount">
+          <ScalarProperty Name="users_id" ColumnName="users_id" />
+          <ScalarProperty Name="users_name" ColumnName="users_name" />
+          <ScalarProperty Name="users_bu1" ColumnName="users_bu1" />
+          <ScalarProperty Name="users_bu2" ColumnName="users_bu2" />
+          <ScalarProperty Name="users_bu3" ColumnName="users_bu3" />
+          <ScalarProperty Name="delflag" ColumnName="delflag" />
+          <ScalarProperty Name="users_pwd" ColumnName="users_pwd" />
+          <ScalarProperty Name="users_email" ColumnName="users_email" />
+          <ScalarProperty Name="address_id" ColumnName="address_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAddress">
+      <EntityTypeMapping TypeName="EFeesModel.UserAddress">
+        <MappingFragment StoreEntitySet="UserAddress">
+          <ScalarProperty Name="address_id" ColumnName="address_id" />
+          <ScalarProperty Name="address_full" ColumnName="address_full" />
+          <ScalarProperty Name="address_content" ColumnName="address_content" />
+          <ScalarProperty Name="address_area" ColumnName="address_area" />
+          <ScalarProperty Name="delflag" ColumnName="delflag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERID">
+      <EntityTypeMapping TypeName="EFeesModel.USERID">
+        <MappingFragment StoreEntitySet="USERID">
+          <ScalarProperty Name="ACCOUNT" ColumnName="ACCOUNT" />
+          <ScalarProperty Name="IDPASSNO" ColumnName="IDPASSNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

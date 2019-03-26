@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>testcheck</title>
+</head>
+<body>
+    <div>
+
+        输入 <input type="text" id="t1" name="t1" />
+        <button id="s">提交</button>
+    </div>
+
+    <div id="qrcode">
+
+    </div>
+</body>
+</html>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Content/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+    $(function()
+    {
+        $("#s").click(function () {
+
+            $.post("/m_bills1/testcheck1", { 'data': $("#t1").val() }, function (data) {
+
+                alert(data);
+              // $("#qrcode").qrcode(data);
+            });
+        });
+    });
+
+
+
+</script>

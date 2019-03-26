@@ -1,0 +1,10 @@
+*.sln
+/EhkBackend.ui/*.config
+*.config
+*.edmx
+*.diagram
+*.tt
+/EhkBackend.Model/*.config
+/EhkBackend.Model/*.edmx
+/EhkBackend.Model/*.diagram
+/EhkBackend.Model/*.tt

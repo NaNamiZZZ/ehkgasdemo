@@ -1,0 +1,16 @@
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.Dal.dll.config
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.Dal.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.Dal.pdb
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.IDal.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.Model.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EntityFramework.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.IDal.pdb
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EhkBackend.Model.pdb
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EntityFramework.xml
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\obj\Debug\EhkBackend.Dal.csprojResolveAssemblyReference.cache
+E:\myproject\EhkBackend\EhkBackend.Dal\obj\Debug\EhkBackend.Dal.dll
+E:\myproject\EhkBackend\EhkBackend.Dal\obj\Debug\EhkBackend.Dal.pdb

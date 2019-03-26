@@ -1,0 +1,12 @@
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EhkBackend.common.dll.config
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EhkBackend.common.dll
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EhkBackend.common.pdb
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EntityFramework.dll
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EntityFramework.SqlServer.dll
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EntityFramework.xml
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\EntityFramework.SqlServer.xml
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\myproject\EhkBackend\EhkBackend.common\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\myproject\EhkBackend\EhkBackend.common\obj\Release\EhkBackend.common.csprojResolveAssemblyReference.cache
+E:\myproject\EhkBackend\EhkBackend.common\obj\Release\EhkBackend.common.dll
+E:\myproject\EhkBackend\EhkBackend.common\obj\Release\EhkBackend.common.pdb
