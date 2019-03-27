@@ -50,7 +50,7 @@ namespace EhkBackend.ui.Controllers
 
         public ActionResult AddEmail()
         {
-            string account_ = Request["Account"];
+            string account_ = Request["Account"].ToUpper();//使输入Email为大写
             string email_ = Request["Email"];
             var youaccount = emailService.GetEntities(y => y.account.Contains(account_) && y.delflag == true).Count();
             var youemail = emailService.GetEntities(y => y.email.Contains(email_) && y.delflag == true).Count();
