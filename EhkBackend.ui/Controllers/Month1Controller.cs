@@ -41,6 +41,7 @@ namespace EhkBackend.ui.Controllers
 
         public ActionResult ExImport(HttpPostedFileBase file)
         {
+            //month1 导入数据表
             var fileName = file.FileName;
             var filePath = Server.MapPath(string.Format("~/{0}", "FileExecel"));
             string path = Path.Combine(filePath, fileName);
