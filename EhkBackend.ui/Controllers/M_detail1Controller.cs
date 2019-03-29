@@ -101,9 +101,9 @@ namespace EhkBackend.ui.Controllers
             string constr = System.Configuration.ConfigurationManager.AppSettings["EFeesEntities"];
             using (TransactionScope tran = new TransactionScope())
             {
-                string sql = "delete  from m_detail2";//导入 新的mdetail1
+                string sql = "delete  from m_detail1";//导入 新的mdetail1
                 SqlHelp.ExecuteNonQuery(constr, sql);
-                DataTableSql.SqlBulkCopyByDatatable(constr, "m_detail2", dtable);
+                DataTableSql.SqlBulkCopyByDatatable(constr, "m_detail1", dtable);
 
                 tran.Complete();
             }

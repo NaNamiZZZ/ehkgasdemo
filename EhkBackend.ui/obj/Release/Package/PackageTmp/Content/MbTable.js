@@ -295,7 +295,7 @@ $("#table").datagrid({
                field: 'billno',
                title: 'billno',
                width: 10,
-               align: 'center'
+               align: 'left'
 
 
 
@@ -304,7 +304,7 @@ $("#table").datagrid({
                 field: 'account',
                 title: 'account',
                 width: 10,
-                align: 'center'
+                align: 'left'
 
 
 
@@ -313,7 +313,7 @@ $("#table").datagrid({
                 field: 'bill',
                 title: 'bill',
                 width: 10,
-                align: 'center'
+                align: 'left'
 
 
 
@@ -322,7 +322,7 @@ $("#table").datagrid({
                 field: 'name',
                 title: 'name',
                 width: 20,
-                align: 'center'
+                align: 'left'
 
             }
             //{

@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -9,10 +8,10 @@
     <meta charset="UTF-8">
     <title>表格列表</title>
 
- 
+
     <link href="~/Content/js/jquery-easyui-1.5.3/themes/default/easyui.css" rel="stylesheet" />
     <link href="~/Content/js/jquery-easyui-1.5.3/themes/icon.css" rel="stylesheet" />
-   
+
     <link href="~/Content/css/main.css" rel="stylesheet" />
 
 </head>
@@ -23,13 +22,13 @@
         <div data-options="region:'center',split:true">
             <!--表格查询-->
             <div class="tableFind">
-              @using (Html.BeginForm("ExImport", "M_Bills1", FormMethod.Post, new { enctype = "multipart/form-data" }))
-              {
-                <input name="file" type="file" id="=file" />
-                <input name="submit" id="submit" type="submit" value="导入" />
-              }
-                <p><a href="/M_Bills1/exceportMbills">导出</a></p>
-               <p hidden="hidden">
+                @using (Html.BeginForm("ExImport", "Month1", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <input name="file" type="file" id="=file" />
+                    <input name="submit" id="submit" type="submit" value="导入" />
+                }
+               
+                <p hidden="hidden">
                     <label>用户名;</label><input type="text" id="user" /><label>日期;</label><input type="text" id="dd" class="easyui-datebox" style="width: 16%;height:26px;" /><label>类型;</label><select>
                         <option>全部</option>
                     </select><label>关键字;</label><input type="text" />
@@ -37,15 +36,15 @@
                 <p hidden="hidden"><label>部门;</label><input type="text" id="part" /><label>选择种类：</label><input type="text" id="combox"><a id="btn" href="javascript:" class="easyui-linkbutton tableFindBut" data-options="iconCls:'icon-search'" onclick="obj.find()">查询</a></p>
             </div>
             @*<div id="sp">
-                <div style="color:#99BBE8;background:#fafafa;padding:5px;">Select a language</div>
-                <div style="padding-top:10px">
-                    <input type="radio" name="lang" value="01"><span>Java</span><br />
-                    <input type="radio" name="lang" value="02"><span>C#</span><br />
-                    <input type="radio" name="lang" value="03"><span>Ruby</span><br />
-                    <input type="radio" name="lang" value="04"><span>Basic</span><br />
-                    <input type="radio" name="lang" value="05"><span>Fortran</span>
-                </div>
-            </div>*@
+                    <div style="color:#99BBE8;background:#fafafa;padding:5px;">Select a language</div>
+                    <div style="padding-top:10px">
+                        <input type="radio" name="lang" value="01"><span>Java</span><br />
+                        <input type="radio" name="lang" value="02"><span>C#</span><br />
+                        <input type="radio" name="lang" value="03"><span>Ruby</span><br />
+                        <input type="radio" name="lang" value="04"><span>Basic</span><br />
+                        <input type="radio" name="lang" value="05"><span>Fortran</span>
+                    </div>
+                </div>*@
             <!--表格列表-->
             <div class="tableCon">
                 <table id="table" class="tableStyle"></table>
@@ -164,8 +163,8 @@
     <script src="~/Content/js/main.js"></script>
     <script src="~/Content/js/jquery-easyui-1.5.3/jquery.easyui.min.js"></script>
     <script src="~/Content/js/jquery-easyui-1.5.3/locale/easyui-lang-zh_CN.js"></script>
-    <script src="~/Content/MbTable.js"></script>
-    
+   
+    <script src="~/Content/MonthTable.js"></script>
     @*<script src="js/table.js"></script>*@
 
 

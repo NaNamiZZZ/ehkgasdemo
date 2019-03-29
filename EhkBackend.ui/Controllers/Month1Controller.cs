@@ -64,7 +64,7 @@ namespace EhkBackend.ui.Controllers
             {
                 DataRow dr = excelTable.Rows[i];
                 DataRow dr_ = dtable.NewRow();
-                dr_["billdate"] = dr["bildate"];
+                dr_["bildate"] = dr["bildate"];
                 dr_["duedate"] = dr["Duedate"];
                 dr_["rate"] = dr["Rate"];
                 dr_["remarks1"] = dr["Remarks1"];

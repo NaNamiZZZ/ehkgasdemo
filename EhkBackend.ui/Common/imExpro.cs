@@ -22,7 +22,7 @@ namespace EhkBackend.ui.Common
                 using (FileStream fileStream = new FileStream(filepath, FileMode.Open, FileAccess.Read))
                 {
                     string fileExt = Path.GetExtension(filepath).ToLower();
-                    if (fileExt == ".xls")
+                    if (fileExt == ".xls"||fileExt==".XLS")
                     {
 
                         workbook = new HSSFWorkbook(fileStream);

@@ -8,3 +8,6 @@
 /EhkBackend.Model/*.edmx
 /EhkBackend.Model/*.diagram
 /EhkBackend.Model/*.tt
+*.xlsx
+*.xls
+*.XLS
