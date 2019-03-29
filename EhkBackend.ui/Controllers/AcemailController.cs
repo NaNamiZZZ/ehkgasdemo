@@ -3,8 +3,11 @@ using EhkBackend.common;
 using EhkBackend.IBLL;
 using EhkBackend.Model;
 using EhkBackend.Model.param;
+using NPOI.HSSF.UserModel;
+using NPOI.SS.UserModel;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -222,6 +225,43 @@ namespace EhkBackend.ui.Controllers
                 return Content("<script>alert('邮件发送失败!')</script>");
             }
             // return View();
+        }
+
+
+        public FileResult GetacemailExcel()
+        {
+            var ac1 = emailService.GetEntities(b => true).AsQueryable().ToList();
+
+            List<string> checkesum1 = new List<string>();
+            //foreach (var item in mb1)
+            //{
+            //    string b = item.account.ToString().Substring(item.account.ToString().Length - 3, 3);
+            //    string straccount = b;
+            //    StringBuilder sb = new StringBuilder();
+            //    sb.Append(straccount);
+            //    sb.Append(item.billno.ToString());
+            //    // sb.ToString();
+            //    string Ocode = CheckA.checksum(sb.ToString());
+            //    checkesum1.Add("62210" + sb.ToString() + Ocode);
+            //}
+            HSSFWorkbook book = new HSSFWorkbook();
+
+            ISheet sheet1 = book.CreateSheet("sheet1");
+            IRow row1 = sheet1.CreateRow(0);
+            row1.CreateCell(0).SetCellValue("account");
+            row1.CreateCell(1).SetCellValue("email");
+            for (int i = 0; i < ac1.Count; i++)
+            {
+                IRow rowtemp = sheet1.CreateRow(i + 1);
+                rowtemp.CreateCell(0).SetCellValue(ac1[i].account.ToString());
+                rowtemp.CreateCell(1).SetCellValue(ac1[i].email.ToString());
+
+
+            }
+            MemoryStream ms = new MemoryStream();
+            book.Write(ms);
+            ms.Seek(0, SeekOrigin.Begin);
+            return File(ms, "application/vnd.ms-excel", "email.xls");
         }
     }
 }

@@ -26,5 +26,9 @@ namespace EhkBackend.ui.Controllers
 
             return View();
         }
+        public ActionResult Bindex()
+        {
+            return View();
+        }
     }
 }

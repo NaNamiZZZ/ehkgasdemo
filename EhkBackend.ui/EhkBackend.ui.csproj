@@ -1203,6 +1203,7 @@
     <Content Include="Views\M_Bills1\testcheck.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Month1\Month1Index.cshtml" />
+    <Content Include="Views\Home\Bindex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

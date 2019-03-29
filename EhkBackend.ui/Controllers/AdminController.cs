@@ -32,15 +32,20 @@ namespace EhkBackend.ui.Controllers
             a.admin_id = admin_id;
             a.admin_pwd = pwd;
            var login12=adminService.checkLogin(a);
-            if (login12 != null)
+            if (login12 != null && login12.admin_back1 == "a")
             {
                 return Redirect("/Home/index");
 
             }
-            else {
+            else if (login12 != null && login12.admin_back1 == "b")
+            {
+                return Redirect("/Home/Bindex");// 账号 admin_back1 b=标准用户
+            }
+            else
+            {
                 return Content("error");
             }
-            return View();
+         //   return View();
         }
     }
 }
