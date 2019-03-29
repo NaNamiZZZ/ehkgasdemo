@@ -61,15 +61,15 @@
 
     <!--//新增弹出框-->
     <div id="addBox">
-        <form id="addForm" method="post">
+        <form id="addForm" method="post" autocomplete="off">
             @*<div class="formDiv"><label>用户名称:</label><input type="text" id="name" class="easyui-validatebox" name="name" data-options="required:true"><span class="formSpan">*</span></div>
             <div class="formDiv"><label>密码:</label><input type="password" id="pass" class="easyui-validatebox" name="pass" data-options="required:true"><span class="formSpan">*</span></div>
             <div class="formDiv"><label>入职时间:</label><input type="text" id="time" class="easyui-datebox" name="time" style="width: 70%;height: 26px"></div>
             <div class="formDiv"><label>所属部门:</label><input type="text" id="part01" /></div>
             <div class="formDiv"><label>所属角色:</label><select id="role"><option>xxxx</option></select></div>*@
-            <div class="formDiv"><label>用戶賬號:</label><input type="text" id="Account" class="easyui-validatebox" name="Account" data-options="required:true"><span class="formSpan">*</span></div>
-            <div class="formDiv"><label>電郵地址:</label><input type="text" id="Email" class="easyui-validatebox" name="Email" data-options="required:true"><span class="formSpan">*</span></div>
-            <div class="forSubmint"> <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="obj.sum()">提交</a><a href="#" class="easyui-linkbutton" iconCls="icon-redo">重置</a> </div>
+            <div class="formDiv"><label>用戶賬號:</label><input type="text" id="Account" class="easyui-validatebox" name="Account" data-options="required:true" autocomplete="off"><span class="formSpan">*</span></div>
+            <div class="formDiv"><label>電郵地址:</label><input type="text" id="Email" class="easyui-validatebox" name="Email" data-options="required:true" autocomplete="off"><span class="formSpan">*</span></div>
+            <div class="forSubmint"> <a href="#"  class="easyui-linkbutton" iconCls="icon-ok" onclick="obj.sum()">提交</a><a href="#" class="easyui-linkbutton" iconCls="icon-redo">重置</a> </div>
 
         </form>
     </div>
@@ -168,7 +168,7 @@
  
     <script src="~/Content/AcemailTable.js"></script>
     @*<script src="js/table.js"></script>*@
-
+    
 
 </body>
 </html>

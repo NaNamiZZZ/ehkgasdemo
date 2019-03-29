@@ -66,8 +66,9 @@ obj = {
             closed: false
 
         });
-        $("#name").val('');
-        $("#pass").val('');
+        $('#addForm').form('clear');
+        $("#Account").val('');
+        $("#Email").val('');
         $("#part01").combotree('setValue', '');
         var date = new Date();
         var y = date.getFullYear();
@@ -148,6 +149,8 @@ obj = {
                 //var time = $("#time").datebox('getValue');
                 //var part = $("#part01").combotree('getValue');
                 //var id = parseInt(Math.random() * 100000);
+
+                $('#addForm').form('clear');
                 $("#table").datagrid('insertRow', {
                     index: 1,
                     row: {
@@ -159,10 +162,12 @@ obj = {
                         //time: time,
                         //part: part
                     }
-
+                    
 
                 })
+               
                 $("#addBox").dialog({
+                   
                     closed: true
 
                 })
@@ -218,7 +223,7 @@ obj = {
             }
 
         })
-
+   
     },
     // 删除多个
     del: function () {
@@ -415,6 +420,7 @@ $("#addBox").dialog({
     title: "信息内容",
     width: 500,
     height: 300,
+    cache:false,
     closed: true,
     modal: true,
     shadow: true
