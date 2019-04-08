@@ -1,5 +1,6 @@
 ﻿using EhkBackend.BLL;
 using EhkBackend.IBLL;
+using EhkBackend.Model;
 using EhkBackend.ui.Common;
 using System;
 using System.Collections.Generic;
@@ -85,6 +86,53 @@ namespace EhkBackend.ui.Controllers
             }
             return Content(fileName.ToString());
 
+        }
+
+
+        public ActionResult GetOneMonth(int mid) {
+            var b = monthService.GetEntities(bi => bi.mid.Equals(mid)).FirstOrDefault();
+
+            var bc = new
+            {
+                success = true,
+                bildatae = b.bildate,
+                Duedate = b.Duedate,
+                Rate = b.Rate,
+                Remarks1 = b.Remarks1,
+                Remarks2 = b.Remarks2
+
+            };
+            return Json(bc);
+        }
+
+
+        public ActionResult AddMonth()
+        {
+            //int mid = Convert.ToInt32(Request["mid"]);
+            var mon = monthService.GetEntities(b => true).FirstOrDefault();
+            DateTime bildate = Convert.ToDateTime(Request["bildate"]);
+            DateTime Duedate = Convert.ToDateTime(Request["Duedate"]);
+             string Rate= Request["Rate"];
+            string Remarks1= Request["Remarks1"];
+            string Remarks2= Request["Remarks2"];
+
+
+            if (mon != null)
+            {
+                month1 m = new month1();
+                m.Rate = Rate;
+                m.Remarks1 = Remarks1;
+                m.Remarks2 = Remarks2;
+                m.Duedate = Duedate;
+                m.bildate = bildate;
+                monthService.update(m);
+                return Content("success");
+            }
+            else {
+
+                return Content("monNo_exit");
+            }
+            return View();
         }
     }
 }

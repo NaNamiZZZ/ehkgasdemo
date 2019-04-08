@@ -85,11 +85,11 @@ obj = {
             closed: false
         })
         $.ajax({
-            url: '/Acemail/GetOneEmail',
+            url: '/Month1/GetOneMonth',
             type: 'post',
             dataType: 'json',
             data: {
-                Account_: id
+                Mid_: id
             },
             success: function (res) {
                 if (res) {
@@ -137,7 +137,7 @@ obj = {
     },
     sum: function () {
         $("#addForm").form('submit', {
-            url: "/Acemail/AddEmail",
+            url: "/Month1/AddMonth",
             onSubmit: function () {
                 return $(this).form('validate')
 
@@ -343,7 +343,15 @@ function initable() {
                 //    width: 10,
                 //    align: 'center'
                 //},
+                {
 
+
+                    field: 'mid',
+                    title: 'Mid',
+                    width: 20,
+                    align: 'center'
+
+                },
                 {
                     field: 'bildate',
                     title: 'Billdate',
@@ -434,20 +442,20 @@ function initable() {
 
 
                 //},
-                //{
-                //    field: "opr",
-                //    title: '操作',
-                //    width: 100,
-                //    align: 'center',
-                //    formatter: function (val, row) {
-                //        e = '<a  id="add" data-id="98" class=" operA"  onclick="obj.edit(\'' + row.account + '\')">编辑</a> ';
-                //        //c = '<a  id="look"   onclick="obj.look(\'' + row.id + '\')">流程查看</a> ';
-                //        d = '<a  id="add" data-id="98" class=" operA01"  onclick="obj.delOne(\'' + row.account + '\')">删除</a> ';
-                //        return e + d;
+                {
+                    field: "opr",
+                    title: '操作',
+                    width: 100,
+                    align: 'center',
+                    formatter: function (val, row) {
+                        e = '<a  id="add" data-id="98" class=" operA"  onclick="obj.edit(\'' + row.mid + '\')">编辑</a> ';
+                        //c = '<a  id="look"   onclick="obj.look(\'' + row.id + '\')">流程查看</a> ';
+                        //d = '<a  id="add" data-id="98" class=" operA01"  onclick="obj.delOne(\'' + row.bildate + '\')">删除</a> ';
+                        return e ;
 
-                //    }
+                    }
 
-                //}
+                }
         ]]
     })
 }
