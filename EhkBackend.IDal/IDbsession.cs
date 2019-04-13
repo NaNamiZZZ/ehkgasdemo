@@ -17,6 +17,7 @@ namespace EhkBackend.IDal
 
         IAdminDal AdminDal { get; }
         IMonth1Dal Month1Dal { get; }
+        IReportMeterDal ReportMeterDal { get; }
         int SaveChanges();
     }
 }

@@ -46,6 +46,12 @@ namespace EhkBackend.staticDalFactory
                 return staticDalFactory.StaticDalFactory.GetMonth1Dal();
             }
         }
+        public IReportMeterDal ReportMeterDal
+        {
+            get {
+                return staticDalFactory.StaticDalFactory.GetReportMeter();
+            }
+        }
 
 
 

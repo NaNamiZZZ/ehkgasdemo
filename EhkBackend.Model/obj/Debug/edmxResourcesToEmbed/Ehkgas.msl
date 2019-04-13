@@ -325,5 +325,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ReportMeterReading">
+      <EntityTypeMapping TypeName="EFeesModel.ReportMeterReading">
+        <MappingFragment StoreEntitySet="ReportMeterReading">
+          <ScalarProperty Name="delflag" ColumnName="delflag" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ReadDate" ColumnName="ReadDate" />
+          <ScalarProperty Name="meter" ColumnName="meter" />
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

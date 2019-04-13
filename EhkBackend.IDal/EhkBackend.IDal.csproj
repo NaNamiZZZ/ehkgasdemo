@@ -57,6 +57,7 @@
     <Compile Include="IMonth1Dal.cs" />
     <Compile Include="IM_bills1Dal.cs" />
     <Compile Include="IM_detail1Dal.cs" />
+    <Compile Include="IReportMeterDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -276,6 +276,17 @@
     <Property Name="ACCOUNT" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="MAINTDT" Type="nvarchar" MaxLength="100" />
   </EntityType>
+  <EntityType Name="ReportMeterReading">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="account" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="meter" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReadDate" Type="datetime" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="delflag" Type="bit" />
+  </EntityType>
   <EntityType Name="UserAccount">
     <Key>
       <PropertyRef Name="users_id" />
@@ -323,6 +334,7 @@
     <EntitySet Name="month2" EntityType="Self.month2" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="month3" EntityType="Self.month3" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MR" EntityType="Self.MR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReportMeterReading" EntityType="Self.ReportMeterReading" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UserAccount" EntityType="Self.UserAccount" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UserAddress" EntityType="Self.UserAddress" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="USERID" EntityType="Self.USERID" Schema="dbo" store:Type="Tables" />

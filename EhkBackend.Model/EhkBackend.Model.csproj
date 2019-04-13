@@ -115,6 +115,9 @@
     <Compile Include="param\AcemailParam.cs" />
     <Compile Include="param\BaseParam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportMeterReading.cs">
+      <DependentUpon>Ehkgas.tt</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.cs">
       <DependentUpon>Ehkgas.tt</DependentUpon>
     </Compile>

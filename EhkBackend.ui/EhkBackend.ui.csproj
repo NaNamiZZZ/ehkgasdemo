@@ -99,6 +99,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
@@ -227,6 +228,8 @@
     <Compile Include="Controllers\Month1Controller.cs" />
     <Compile Include="Controllers\M_Bills1Controller.cs" />
     <Compile Include="Controllers\M_detail1Controller.cs" />
+    <Compile Include="Controllers\ReportMeterController.cs" />
+    <Compile Include="Controllers\UserAccountController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1204,11 +1207,13 @@
     <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Month1\Month1Index.cshtml" />
     <Content Include="Views\Home\Bindex.cshtml" />
+    <Content Include="Views\ReportMeter\ReportIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\js\GooFlow\images\" />
     <Folder Include="FileExecel\" />
+    <Folder Include="Views\UserAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

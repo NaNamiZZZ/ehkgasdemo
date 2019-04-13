@@ -43,5 +43,6 @@ namespace EhkBackend.Model
         public virtual DbSet<UserAccount> UserAccount { get; set; }
         public virtual DbSet<UserAddress> UserAddress { get; set; }
         public virtual DbSet<USERID> USERID { get; set; }
+        public virtual DbSet<ReportMeterReading> ReportMeterReading { get; set; }
     }
 }

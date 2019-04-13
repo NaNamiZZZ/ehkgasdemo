@@ -56,6 +56,7 @@
     <Compile Include="IMonth1Service.cs" />
     <Compile Include="IM_bills1Service.cs" />
     <Compile Include="IM_detail1Service.cs" />
+    <Compile Include="IReportMeterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

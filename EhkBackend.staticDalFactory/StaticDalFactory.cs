@@ -32,6 +32,10 @@ namespace EhkBackend.staticDalFactory
         {
             return Assembly.Load(assemblyName).CreateInstance(assemblyName + ".Month1Dal") as IMonth1Dal;
         }
+        public static IReportMeterDal GetReportMeter()
+        {
+            return Assembly.Load(assemblyName).CreateInstance(assemblyName + ".ReportMeterDal") as IReportMeterDal;
+        }
         //public static IUserAccountDal GetUserAccount()
         //{
         //    return Assembly.Load(assemblyName).CreateInstance(assemblyName + ".UserAccountDal") as IUserAccountDal;
