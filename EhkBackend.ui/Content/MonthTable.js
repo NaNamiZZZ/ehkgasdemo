@@ -319,7 +319,7 @@ obj = {
 initable();
 function initable() {
     $("#table").datagrid({
-        title: "電郵列表",
+        title: "Month列表",
         iconCls: "icon-left02",
         url: '/Month1/GetMonth1List',
         fitColumns: true,

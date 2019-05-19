@@ -10,3 +10,5 @@ E:\myproject\EhkBackend\EhkBackend.common\bin\Debug\zh-Hans\EntityFramework.SqlS
 E:\myproject\EhkBackend\EhkBackend.common\obj\Debug\EhkBackend.common.csprojResolveAssemblyReference.cache
 E:\myproject\EhkBackend\EhkBackend.common\obj\Debug\EhkBackend.common.dll
 E:\myproject\EhkBackend\EhkBackend.common\obj\Debug\EhkBackend.common.pdb
+E:\myproject\EhkBackend\EhkBackend.common\bin\Debug\log4net.dll
+E:\myproject\EhkBackend\EhkBackend.common\bin\Debug\log4net.xml

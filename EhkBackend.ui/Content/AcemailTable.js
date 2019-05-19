@@ -16,6 +16,36 @@ $("#sp input").click(function () {
 
 })
 
+$("#AllsendEmail").click(function ()
+{
+    AllSend();
+})
+function AllSend()
+{
+    //$.messager.defaults = { ok: "确定", cancel: "取消" };
+    $.messager.confirm("?","确认发送邮件", function (data)
+    {
+        if (data) {
+           
+            $.post("/Acemail/ALLSendBillEmail",{},function(data)
+            {
+                alert(data);
+            
+            });
+
+        }
+        else
+        {
+
+            alert("取消");
+        }
+
+    })
+    
+   
+
+}
+
 // 加载部门下拉框
 $("#part").combotree({
     url: 'json/userTree.json',

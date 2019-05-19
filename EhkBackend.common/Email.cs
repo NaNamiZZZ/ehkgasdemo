@@ -111,12 +111,16 @@ namespace EhkBackend.common
                     }
                     mSmtpClient.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
                     ServicePointManager.ServerCertificateValidationCallback = delegate (Object obj, System.Security.Cryptography.X509Certificates.X509Certificate certificate, X509Chain chain, SslPolicyErrors errors) { return true; };// 解決根据验证过程,远程证书无效 。
+                 
                     mSmtpClient.Send(mMailMessag);
+                    logHelp.Info(mMailMessag.To.ToString() + "发送成功");
+
                 }
 
             }
-            catch
+            catch( Exception ex)
             {
+                logHelp.error("email: " + mMailMessag.To.ToString() + "------" + "错误信息：" + ex.Message);
                 return false;
             }
             return true;

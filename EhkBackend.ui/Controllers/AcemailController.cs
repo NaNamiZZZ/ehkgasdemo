@@ -155,12 +155,13 @@ namespace EhkBackend.ui.Controllers
                             //int mon = D.Month;
                             //int year = D.Year;
                             string mailaddress = acEmail.email;
-                          //  sendBillEmail(BillNo, D, u, accountno, mailaddress);
+                           sendBillEmail(BillNo, D, u, accountno, mailaddress);
                         }
                     }
                     catch (Exception ex)
                     {
                         string exnam = ex.Message;
+                        logHelp.error(exnam);
                     }
 
                 }
@@ -262,6 +263,13 @@ namespace EhkBackend.ui.Controllers
             book.Write(ms);
             ms.Seek(0, SeekOrigin.Begin);
             return File(ms, "application/vnd.ms-excel", "email.xls");
+        }
+
+        public ActionResult testUrl()
+        {
+            logHelp.debug("测试");
+            logHelp.error("第二次测试");
+            return Content("什么东西");
         }
     }
 }

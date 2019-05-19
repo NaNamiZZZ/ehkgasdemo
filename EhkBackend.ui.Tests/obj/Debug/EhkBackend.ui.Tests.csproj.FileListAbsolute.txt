@@ -92,3 +92,5 @@ E:\myproject\EhkBackend\EhkBackend.ui.Tests\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\myproject\EhkBackend\EhkBackend.ui.Tests\bin\Debug\ICSharpCode.SharpZipLib.xml
 E:\myproject\EhkBackend\EhkBackend.ui.Tests\bin\Debug\EhkBackend.common.dll
 E:\myproject\EhkBackend\EhkBackend.ui.Tests\bin\Debug\EhkBackend.common.pdb
+E:\myproject\EhkBackend\EhkBackend.ui.Tests\bin\Debug\log4net.dll
+E:\myproject\EhkBackend\EhkBackend.ui.Tests\bin\Debug\log4net.xml

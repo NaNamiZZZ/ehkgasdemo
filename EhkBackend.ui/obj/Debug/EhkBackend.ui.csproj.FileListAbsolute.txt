@@ -119,3 +119,5 @@ E:\myproject\EhkBackend\EhkBackend.ui\bin\NPOI.OOXML.dll
 E:\myproject\EhkBackend\EhkBackend.ui\bin\NPOI.OpenXml4Net.dll
 E:\myproject\EhkBackend\EhkBackend.ui\bin\NPOI.OpenXmlFormats.dll
 E:\myproject\EhkBackend\EhkBackend.ui\bin\ICSharpCode.SharpZipLib.xml
+E:\myproject\EhkBackend\EhkBackend.ui\bin\log4net.dll
+E:\myproject\EhkBackend\EhkBackend.ui\bin\log4net.xml
